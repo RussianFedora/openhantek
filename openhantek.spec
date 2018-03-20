@@ -4,7 +4,7 @@
 
 Name:           openhantek
 Version:        0.0.1
-Release:        1.%{date}git%{gitcommit}%{?dist}
+Release:        0.%{date}git%{gitcommit}%{?dist}
 Summary:        Hantek and compatible USB digital signal oscilloscope
 
 License:        GPLv3+
@@ -72,5 +72,5 @@ install -p -D -m 644 %{name}/res/images/%{name}.svg %{buildroot}%{_datadir}/icon
 
 
 %changelog
-* Thu Mar 15 2018 Vasiliy N. Glazov <vascom2@gmail.com> - 0.0.1-1.20180315git52622ac
+* Thu Mar 15 2018 Vasiliy N. Glazov <vascom2@gmail.com> - 0.0.1-0.20180315git52622ac
 - 
