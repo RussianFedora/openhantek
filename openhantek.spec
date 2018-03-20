@@ -3,8 +3,8 @@
 %global date 20180315
 
 Name:           openhantek
-Version:        0.0.1
-Release:        0.%{date}git%{gitcommit}%{?dist}
+Version:        0
+Release:        1.%{date}git%{gitcommit}%{?dist}
 Summary:        Hantek and compatible USB digital signal oscilloscope
 
 License:        GPLv3+
@@ -53,12 +53,6 @@ desktop-file-install --dir="%{buildroot}%{_datadir}/applications" %{SOURCE1}
 install -p -D -m 644 %{name}/res/images/%{name}.png %{buildroot}%{_datadir}/icons/hicolor/48x48/apps/%{name}.png
 install -p -D -m 644 %{name}/res/images/%{name}.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 
-%post
-%{udev_rules_update}
-
-%postun
-%{udev_rules_update}
-
 
 %files
 %license COPYING
@@ -72,5 +66,5 @@ install -p -D -m 644 %{name}/res/images/%{name}.svg %{buildroot}%{_datadir}/icon
 
 
 %changelog
-* Thu Mar 15 2018 Vasiliy N. Glazov <vascom2@gmail.com> - 0.0.1-0.20180315git52622ac
-- 
+* Thu Mar 15 2018 Vasiliy N. Glazov <vascom2@gmail.com> - 0-1.20180315git52622ac
+- Initial package for Fedora
