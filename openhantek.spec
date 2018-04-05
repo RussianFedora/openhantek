@@ -1,6 +1,6 @@
-%global gitcommit_full 52622ac973ce552c5ee5a2ecd7de6443c5026fa3
+%global gitcommit_full 0eff8d451180c8c1328ff0d33de4e2f477147e16
 %global gitcommit %(c=%{gitcommit_full}; echo ${c:0:7})
-%global date 20180315
+%global date 20180320
 
 Name:           openhantek
 Version:        0
@@ -9,7 +9,7 @@ Summary:        Hantek and compatible USB digital signal oscilloscope
 
 License:        GPLv3+
 URL:            http://openhantek.org
-Source0:        https://github.com/OpenHantek/openhantek/tarball/%{gitcommit_full}
+Source0:        openhantek-openhantek2.zip
 Source1:        %{name}.desktop
 
 BuildRequires:  gcc-c++
@@ -33,7 +33,7 @@ OpenHantek is a free software for Hantek and compatible
 Supported devices: DSO2xxx Series, DSO52xx Series, 6022BE/BL.
 
 %prep
-%autosetup -n OpenHantek-%{name}-%{gitcommit}
+%autosetup -n openhantek-openhantek2
 
 
 %build
