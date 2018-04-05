@@ -15,6 +15,7 @@ Source1:        %{name}.desktop
 BuildRequires:  gcc-c++
 BuildRequires:  cmake
 BuildRequires:  cmake(Qt5)
+BuildRequires:  cmake(Qt53DCore)
 BuildRequires:  fftw-devel
 BuildRequires:  libusbx-devel
 BuildRequires:  qt5-qttools-devel
