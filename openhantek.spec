@@ -50,7 +50,6 @@ popd
 mkdir -p %{buildroot}%{_udevrulesdir}
 mv %{buildroot}/lib/udev/rules.d/60-hantek.rules %{buildroot}%{_udevrulesdir}
 desktop-file-install --dir="%{buildroot}%{_datadir}/applications" %{SOURCE1}
-install -p -D -m 644 %{name}/res/images/%{name}.png %{buildroot}%{_datadir}/icons/hicolor/48x48/apps/%{name}.png
 install -p -D -m 644 %{name}/res/images/%{name}.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 
 
@@ -59,7 +58,6 @@ install -p -D -m 644 %{name}/res/images/%{name}.svg %{buildroot}%{_datadir}/icon
 %doc readme.md
 %{_bindir}/OpenHantek
 %{_datadir}/applications/%{name}.desktop
-%{_datadir}/icons/hicolor/48x48/apps/%{name}.png
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{_udevrulesdir}/60-hantek.*
 
