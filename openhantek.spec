@@ -24,8 +24,10 @@ BuildRequires:  mesa-libGLES-devel
 BuildRequires:  binutils-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:  doxygen
+BuildRequires:  pkgconfig(udev)
 
 Requires:       hicolor-icon-theme
+Requires:       pkgconfig(udev)
 
 %description
 OpenHantek is a free software for Hantek and compatible
