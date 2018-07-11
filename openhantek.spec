@@ -1,6 +1,6 @@
-%global gitcommit_full 0eff8d451180c8c1328ff0d33de4e2f477147e16
+%global gitcommit_full 9935f0a6defa78a77824d389472d9b3a7172a1aa
 %global gitcommit %(c=%{gitcommit_full}; echo ${c:0:7})
-%global date 20180320
+%global date 20180710
 
 Name:           openhantek
 Version:        0
@@ -66,5 +66,8 @@ install -p -D -m 644 %{name}/res/images/%{name}.svg %{buildroot}%{_datadir}/icon
 
 
 %changelog
+* Wed Jul 11 2018 Vasiliy N. Glazov <vascom2@gmail.com> - 0-1.20180710git9935f0a
+- Update to latest git
+
 * Thu Mar 15 2018 Vasiliy N. Glazov <vascom2@gmail.com> - 0-1.20180320git0eff8d4
 - Initial package for Fedora
