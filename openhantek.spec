@@ -7,7 +7,8 @@ Version:        0
 Release:        1.%{date}git%{gitcommit}%{?dist}
 Summary:        Hantek and compatible USB digital signal oscilloscope
 
-License:        GPLv3+
+#Contain nonfree firmware
+License:        GPLv3+ and GPLv2+ and ASL 2.0 and nonfree
 URL:            http://openhantek.org
 Source0:        https://github.com/OpenHantek/openhantek/tarball/%{gitcommit_full}
 Source1:        %{name}.desktop
@@ -27,7 +28,7 @@ BuildRequires:  doxygen
 BuildRequires:  pkgconfig(udev)
 
 Requires:       hicolor-icon-theme
-Requires:       pkgconfig(udev)
+Requires:       systemd-udev
 
 %description
 OpenHantek is a free software for Hantek and compatible
